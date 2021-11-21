@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration:none;
+}
+
+body{
+    background-image: url(../img/Belo-Horizonte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    align-items: center;
+}
+
+header{
+    padding: 10px;
+    background-color: rgba(189, 135, 74, 0.849);
+}
+
+header h1{
+    color: rgb(4, 32, 1);
+    font-size: 45px;
+}
+
+.descricao{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(226, 239, 240, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 6px 3px;
+    margin: 60px;
+    font-size: 18px;
+    border-radius: 50px;
+    height: 70px;
+    width: 1750px auto;
+}
+
+.player{
+    display: block;
+    width: auto;
+    max-width: 1280;
+    margin: 3px;
+}
+
+.curiosidades{
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(226, 239, 240, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 40px;
+    margin: 50px auto;
+    width: auto;
+    max-width: 1120px;
+    height: 185px;
+}
+
+section h2{
+    color: rgb(4, 32, 1);
+    margin: 10px;
+    font-size: 32px;
+    padding: 8px 1px 5px 1px;
+}
+
+.lista{
+    font-size: 18px;
+    list-style: none;
+    padding: 2px;
+}
+
+.incon{
+    height: 25px;
+    width: 25px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.footer{
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    background-color: rgba(71, 59, 39, 0.719);
+}
+
+@media only screen and (max-device-width: 900px) {
+    header { width:100%; }
+    .curiosidades { width:100%; }
+    .player { width:100%; }
+    .footer { width: 100%;}}

@@ -1,0 +1,81 @@
+<!-- Grupo: Gabriella Faria, João Fauth e Sabrina Freiberger -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 2</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bandeira_de_Florian%C3%B3polis.svg/1024px-Bandeira_de_Florian%C3%B3polis.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playball&family=Praise&display=swap');
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Conheça Florianópolis - A Ilha da Magia</h1>
+    </header>
+    <main>
+      <div class="formulario">
+        <h3>Formulário de interesse</h3>
+        <form action="./cadastro" method="POST">
+          <div class="campo">
+            <label for="nome" class="estilo1">Nome completo:</label>
+            <input type="text" name="nome" id="nome" maxlength="100" placeholder="Nome Completo" required>
+          </div>
+          <div class="campo">
+            <label for="email" class="estilo1">Email:</label>
+            <input type="email" name="email" id="email" placeholder="seunome@email.com" required>
+          </div>
+          <div class="campo">
+            <label for="telefone" class="estilo1">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" required>
+          </div>
+          <div class="campo">
+            <label for="nascimento" class="estilo1">Data de nascimento:</label>
+            <input type="date" name="data" min="1910-01-01" max="2007-01-01" id="nascimento" required>
+          </div>
+          <div class="campo">
+            <label for="idade" class="estilo2">É maior de idade?</label>
+            <div>
+            <input type="radio" name="idade" id="sim" class="radio">
+            <label for="sim" class="radio-label">Sim</label> 
+            <input type="radio" name="idade" id="nao" class="radio">
+            <label for="nao" class="radio-label">Não</label> 
+            </div>
+          </div>
+          <div class="campo">
+            <label for="pontosinteresse" class="estilo2">Selecione um ponto turístico de interesse: </label>
+            <select name="interesses" id="pontosinteresse">
+              <option value="0" selected disabled>Selecione</option>
+              <option value="ponte">Ponte Hercílio Luz</option>
+              <option value="praias">Praias</option>
+              <option value="mirantes">Mirantes</option>
+              <option value="jurere">Jurerê Internacional</option>
+            </select>
+          </div>
+          <div class="campo">
+          <div>
+            <label for="motivo" class="estilo2" id="check-label">Motivações:</label>
+          <div>
+            <input type="checkbox" name="motivo" id="motivoT" value="Turismo" class="check">
+            <label for="motivoT" class="check-label">Turismo</label>
+            <input type="checkbox" name="motivo" id="motivoR" value="Residência" class="check">
+            <label for="motivoR" class="check-label">Residência</label>
+            <input type="checkbox" name="motivo" id="motivoE" value="Estudos" class="check">
+            <label for="motivoE" class="check-label">Estudos</label>
+          </div>
+          <div class="botoes">
+            <button type="reset" id="reset">Resetar</button>
+            <button type="submit" id="submit">Enviar</buttov>
+          </div>
+        </form>
+      </div>
+    </main>   
+    <footer class="footer">
+      <p><strong>Checkpoint desenvolvido por:</strong> Gabriella Faria, João Fauth e Sabrina Freiberger.</p>
+    </footer>
+  </body>
+</html>

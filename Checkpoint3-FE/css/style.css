@@ -1,0 +1,33 @@
+*{
+  scroll-behavior: smooth;
+}
+
+.card-img-top{
+  transition: 400ms ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1,1.1);
+}
+
+footer{
+  width: 100%;
+  position: absolute;
+  margin-bottom: 0;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  margin-bottom: 20px;
+  background-image: url(../img/bgex.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.embed-responsive-item{
+    width:100%;
+    min-height: 700px;
+    height:100%;
+}
